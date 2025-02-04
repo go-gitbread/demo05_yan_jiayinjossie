@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>My BCIT Project</title>
+    <title>Albert's Blog</title>
     <meta name="comp1800 template" content="My 1800 App">
 
-    <!-- Required meta tags -->
+    <!-- Required meta tags  yes we already have !-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Library CSS CDN go here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Boostrap Library JS CDN  go here -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <!-- Other libraries go here -->
 
     <!-- Link to styles of your own -->
@@ -20,11 +24,124 @@
 </head>
 
 <body>
-
-    <!------------------------------>
+    <!-----------   ./ means from current folder   ------------------->
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Stuff for body goes here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/elmo.jpg" style="width: 80px; height: 80px">Albert's
+                Blog</a>
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Favourite Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Albert's Hit List</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Click if you dare</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Info</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="images/elmo.jpg" alt="" width="200" height="200">
+        <h1 class="display-5 fw-bold">This is Albert</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">I am a friendly dog, who just loves taking walks and sniffing other dog pal butts.
+                Quick question: Do you have a snack for me by chance?
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-success btn-lg px-4 gap-3">Give Albert a treat</button>
+                <button type="button" class="btn btn-outline-danger btn-lg px-4">Kick Albert</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="images/pembroke-welsh-corgi-puppy_1000x.webp" class="card-img-top" width="200" height="300"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gina</h5>
+                    <p class="card-text">Gina is a spirited and loving dog who brightens every day with her wagging tail
+                        and endless energy. Her playful antics and unwavering loyalty make her an irreplaceable part of
+                        the family.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="images/premium_photo-1667673941713-ad4d4751c93b.jpeg" class="card-img-top" width="200"
+                    height="300" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Spark</h5>
+                    <p class="card-text">Spark is an adventurous little doggy with a curious spirit and a heart full of
+                        enthusiasm. Whether he's chasing after his favorite ball or curling up for a nap, Spark's charm
+                        and energy are impossible to resist.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="images/samoyed.jpg" class="card-img-top" width="200" height="300" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Farts 1 and 2</h5>
+                    <p class="card-text">Fart 1 and 2 are a mischievous pair of dogs who lives up to to their unique
+                        name with
+                        their playful and quirky personality. Theses boys also farts a lot.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="images/images.jpeg" class="card-img-top" width="200" height="300" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tuna</h5>
+                    <p class="card-text">Tuna is a gentle and lovable dog with a calm demeanor and a heart as big as the
+                        ocean. Whether she's lounging in the sun or greeting everyone with a wagging tail, Tuna's
+                        presence is as comforting as her name is charming.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
 
 
     <!---------------------------------------------->
